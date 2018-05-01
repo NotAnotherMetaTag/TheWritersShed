@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+/*
+* Author: Ben Bolin, Emily Clark
+* CS 485
+*/
+/* import can be a dangerous prospect for a reliable system, but we usin it because I like this font. EC */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #00163d;
+    background-color: #dbe8ff);
+}
+header img {
+  filter: saturate(20%);
+  filter: blur(35%);
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  opacity: 0.20;
+}
+
+header {
+    background-color: #dbe8ff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.bannertitle h1{
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  position: absolute;
+  left: 45%;
+  top: 5%;
+  font-size: 6em;
+}
+.bannertitle h2{
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  position: absolute;
+  left: 45%;
+  top: 25%;
+  font-size: 3em;
+}
+
+nav {
+  width: 30%;
+  background: #00163d;
+  color: #dbe8ff;
+  position: absolute;
+  border-radius: 1em;
+  margin-left: .25em;
+  top: 5em;
+  height: 85%;
+  opacity: .6;
+
+}
+.navtext {
+  opacity: 1;
+    margin: .25em 1em .25em 1em;
+}
+.navtext h1 {
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 3em;
+}
+
+.greeting h1 {
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 4em;
+}
+
+.img-container {
+  /* TODO insert mosaic code */
+  background: #00163d;
+  color: #dbe8ff;
+  border-radius: 1em;
+  text-align: center;
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  font-size: 1em;
+  width: 60%;
+  height: 56%;
+  opacity: .6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.thumbnail {
+  margin: .25em 1em .25em 1em;
+  margin-bottom: 1em;
+  padding: 0;
+  width: 24%;
+  flex: 0 1 auto;
+}
+
+/* hyper-link coding */
+a {
+  color: #00163d;
+}
+
+a:hover {
+  color: #486291;
+}
+
+nav a {
+  color: #dbe8ff;
+}
+
+nav a:hover {
+  color: #486291;
+}
+
+/* footer design */
+footer {
+background: #00163d;
+color:#dbe8ff;
+margin-top: 0;
+padding-left: 1em;
+padding-top: .25em;
+padding-bottom: .25em;
+}
