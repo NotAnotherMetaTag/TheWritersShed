@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  if story_list
+    div(class='img-container')
+      div(class='thumbnail')
+        p Stories
+        a(href=story.url) #{story.story_title}
+  else
+    div(class='img-container')
+      div(class='thumbnail')
+        p Stories
+        p There are no stories.

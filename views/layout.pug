@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    title The Writer's Shed
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript').
+  body
+    header
+      img(src='/images/header_books.jpg' class='banner')
+      div(class="bannertitle")
+        h1 The Writer's Shed
+        h2 A Character Repository Resource
+    nav
+      div(class="navtext")
+        div(class="greeting")
+          h1 Hello!
+        h1(id="World")
+          a(href="worlds") Worlds
+        h1
+          a(href="/characters") Characters
+        h1
+          a(href="/stories") Stories
+        h1
+          a(href="#") Add
+
+    div(id="content" class="content-container")
+      block content
+
+    footer Created By: Ben Bolin & Emily Clark. CS 485. Spring 2018.
