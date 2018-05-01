@@ -3,27 +3,31 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var WorldSchema = new Schema({
-    world_name: String,
+var CharactersSchema = new Schema({
+    name: String,
+    age: Number,
+    dob: Date,
     text_description: String,
-    tags: [String],
-    images: [String]
+    world: [String],
+    images: [String],
+    /* this entry is for a filepath */
+    tags: [String]
     /* this array is for file paths */
 });
 
-// Virtual for World's Name
-WorldSchema
-.virtual('name')
+// Virtual for Character's Name
+CharactersSchema
+.virtual('cname')
 .get(function () {
   return this.name;
 });
 
 // Virtual for opening Character url
-WorldSchema
+CharactersSchema
 .virtual('url')
 .get(function () {
   return '/catalog/author/' + this._id;
 });
 
 // Compile model from schema
-var WorldModel = mongoose.model('Worlds', WorldSchema );
+var CharacterModel = mongoose.model('Characters', CharactersSchema );
